@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Table | 1-Day Personal Chef Pack</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(https://thumbs.dreamstime.com/b/food-wallpaper-green-background-kitchen-pattern-design-room-fun-modern-143891950.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: "Kurale", serif;
+            color: #F3CA52;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0A6847;
+            padding: 10px;
+            text-align: center;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            width: 100%;
+            gap: 50px;
+            font-size: 25px;
+        }
+
+        .nav-left { margin-left: 20px; }
+        .nav-right { justify-content: end; margin-right: 20px; }
+        .nav-left a, .nav-right a { color: #F3CA52; text-decoration: none; }
+
+        .service-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #0A6847;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 90px;
+        }
+
+        h2 { font-size: 26px; margin-bottom: 10px; }
+        p { font-size: 20px; margin-bottom: 20px; }
+        .option { background-color: #7ABA78; padding: 15px; border-radius: 5px; margin-top: 15px; }
+        .option h3 { color: #2C3930; }
+        .option p { color: #0A6847; }
+
+        .price {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #F6E9B2;
+        }
+
+        .back-link { display: block; margin-top: 20px; font-size: 22px; color: #F3CA52; text-decoration: none; }
+        .back-link:hover { color: #F6E9B2; }
+
+        button {
+            background-color: #DCD7C9;
+            color: #2C3930;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0A6847;
+            color: #DCD7C9;
+        }
+
+        .anim1 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim1::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            background: #7ABA78;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim1:hover:after {
+            width: 100%;
+        }
+
+        .anim2 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim2::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            background: #7ABA78;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim2:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="/Home/Atestat.html" class="anim1">Acasă</a>
+            <a href="/Home/recipes.html" class="anim1">Rețete</a>
+            <a href="/Home/cart.html" class="anim1">Coș</a>
+        </div>
+        <div class="nav-right">
+            <a href="/Home/about.html" class="anim2">Despre Noi</a>
+            <a href="/Home/contact.html" class="anim2">Contact</a>
+            <a href="/Home/login.html" class="anim2">Autentificare</a>
+        </div>
+    </nav>
+
+    <div class="service-container">
+        <h2>Experimentați o cină rafinată acasă, alături de un bucătar profesionist, timp de o zi întreagă.</h2>
+        <p>Bucurați-vă de mese personalizate, adaptate preferințelor dumneavoastră, cu două opțiuni convenabile.</p>
+        
+        <div class="option">
+            <h3>Aduceți-vă propriile ingrediente</h3>
+            <p>Bucătarul va găti folosind ingredientele pe care le furnizați, asigurând o notă personalizată mesei dumneavoastră.</p>
+            <p class="price">149 USD pe zi</p>
+            <button>Rezervați acum</button>
+        </div>
+        
+        <div class="option">
+            <h3>Ingrediente oferite de bucătar</h3>
+            <p>Bucătarul va aduce ingrediente proaspete, de înaltă calitate, pentru masa dumneavoastră, contra cost.</p>
+            <p class="price">199 USD pe zi</p>
+            <button>Rezervați acum</button>
+        </div>
+    </div>
+    
+    <a href="../services.html" class="back-link" style="color: #119663; font-size: 45px;">← Înapoi la Servicii</a>
+</body>
+</html>
