@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Chef's Table</title>
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+
+        <img src="./culinary.PNG" width="60px" height="60px" />
+
+        <div class="nav-left">
+            <a href="./Atestat.html" class="anim1">Acasă</a>
+            <a href="./recipes.html" class="anim1">Rețete</a>
+            <a href="./cart.html" class="anim1">Coș</a>
+            
+        </div>
+
+        <div class="nav-right">
+            <a href="./about.html" class="anim2">Despre noi</a>
+            <a href="./contact.html" class="anim2">Contact</a>
+            <a href="./login.html" class="anim2">Autentificare</a>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <h1 class="contact-title">Autentificare</h1>
+        <p>Nu ai un cont? Creează unul acum.</p>
+
+        <form id="login-form" class="contact-form">
+            <input id="username" name="username" type="text" placeholder="Numele de utilizator" required>
+            <input id="email" name="email" type="email" placeholder="Emailul tău" required>
+            <input id="password" name="password" type="password" placeholder="Parola ta" required>
+            <button type="submit">Autentificare</button>
+        </form>
+
+        <p id="login-message"></p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

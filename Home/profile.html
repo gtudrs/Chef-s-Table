@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Chef's Table</title>
+    <link rel="stylesheet" href="profile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+
+        <img src="./culinary.PNG" width="60px" height="60px" />
+
+        <div class="nav-left">
+            <a href="./Atestat.html" class="anim1">Acasă</a>
+            <a href="./recipes.html" class="anim1">Rețete</a>
+            <a href="./cart.html" class="anim1">Coș</a>
+            
+        </div>
+
+        <div class="nav-right">
+            <a href="./about.html" class="anim2">Despre noi</a>
+            <a href="./contact.html" class="anim2">Contact</a>
+            <a href="./login.html" class="anim2">Autentificare</a>
+        </div>
+
+    </nav>
+
+    <div class="profile-container" id="profile-container">
+        <div class="profile-header">
+            <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profile Picture" class="profile-pic">
+            <div class="profile-info">
+                <h2 id="profile-username"></h2>
+                <p id="profile-email"></p>
+                <button onclick="logout()" class="logout-btn">Logout</button>
+            </div>
+        </div>
+
+        <div class="profile-details">
+            <h3>Detaliile Profilului dvs.</h3>
+            <div class="profile-item">
+                <span class="profile-label">Nume de utilizator:</span>
+                <span id="profile-username-detail" class="profile-value"></span>
+            </div>
+            <div class="profile-item">
+                <span class="profile-label">Email:</span>
+                <span id="profile-email-detail" class="profile-value"></span>
+            </div>
+        </div>
+
+        <!-- Settings and Notifications options -->
+        <div class="profile-options">
+            <h3>Opțiuni</h3>
+            <div class="option-item">
+                <button onclick="toggleSettings()" class="option-btn">Setări</button>
+                <button onclick="toggleNotifications()" class="option-btn">Notificări</button>
+            </div>
+            <!-- Settings Section -->
+            <div id="settings" class="option-section" style="display: none;">
+                <h4>Setări</h4>
+                <p>Modificați setările dvs. aici.</p>
+                <form>
+                    <label for="theme">Tema</label>
+                    <select id="theme" onchange="changeTheme(this.value)">
+                        <option value="light">Luminată</option>
+                        <option value="dark">Întunecată</option>
+                    </select>
+                    <button type="submit">Salvează</button>
+                </form>
+            </div>
+
+            <!-- Notifications Section -->
+            <div id="notifications" class="option-section" style="display: none;">
+                <h4>Notificări</h4>
+                <p>Gestionați-vă preferințele de notificare.</p>
+                <form>
+                    <label for="email-notifications">Notificări prin e-mail</label>
+                    <input type="checkbox" id="email-notifications" checked>
+                    <br>
+                    <label for="push-notifications">Notificări push</label>
+                    <input type="checkbox" id="push-notifications" checked>
+                    <br>
+                    <button type="submit">Salvează</button>
+                </form>
+            </div><!-- Add the select box to change theme -->
+            
+            
+
+        </div>
+
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

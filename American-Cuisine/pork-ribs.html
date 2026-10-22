@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Table | Recipe Name</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(https://i.pinimg.com/736x/ee/cf/e2/eecfe24f6f4505c44fd82c5e7902918e.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: "Kurale", serif;
+            color: #F3CA52;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0A6847;
+            padding: 10px;
+            text-align: center;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            width: 100%;
+            gap: 50px;
+            font-size: 25px;
+        }
+
+        .nav-left { margin-left: 20px; }
+        .nav-right { justify-content: end; margin-right: 20px; }
+        .nav-left a, .nav-right a { color: #F3CA52; text-decoration: none; }
+
+        .title {
+            font-family: "Lancelot", serif;
+            font-size: 50px;
+            margin-top: 80px;
+        }
+
+        .video-container {
+            margin: 30px auto;
+            width: 80%;
+            max-width: 800px;
+            height: 400px;
+            background-color: #0A6847;
+            border: 2px solid #F3CA52;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #F6E9B2;
+        }
+
+        .recipe-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #0A6847;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 { font-size: 26px; margin-bottom: 10px; }
+        ul { text-align: left; padding-left: 30px; font-size: 20px; }
+        .back-link { display: block; margin-top: 20px; font-size: 22px; color: #F3CA52; text-decoration: none; }
+        .back-link:hover { color: #F6E9B2; }
+
+        ul li {
+            margin-bottom: 20px;
+        }
+
+        .anim1 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim1::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            background: lightgreen;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim1:hover:after {
+            width: 100%;
+        }
+
+        .anim2 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim2::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            background: lightgreen;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim2:hover:after {
+            width: 100%;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <img src="./culinary.PNG" width="60px" height="60px" />
+
+        <div class="nav-left">
+            <a href="../Home/Atestat.html" class="anim1">Acasă</a>
+            <a href="../Home/recipes.html" class="anim1">Rețete</a>
+            <a href="../Home/cart.html" class="anim1">Coș</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="../Home/about.html" class="anim2">Despre noi</a>
+            <a href="../Home/contact.html" class="anim2">Contact</a>
+            <a href="../Home/login.html" class="anim2">Autentificare</a>
+        </div>
+    </nav>
+
+    <div class="title">
+        <h1>Costițe de Porc</h1>
+    </div>
+
+    <div class="video-container">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GLtC82flqjg?si=ug68lP69BUrQ4-Te" frameborder="0"></iframe>
+    </div>
+
+    <div class="recipe-container">
+        <h2>Ingrediente:</h2>
+        <ul>
+            <li>1 șir de coaste de porc (aprox. 1,5 kg)</li>
+            <li>2 linguri (30 ml) ulei de măsline</li>
+            <li>1 lingură (15 g) sare</li>
+            <li>1 lingură (10 g) piper negru</li>
+            <li>1 lingură (10 g) boia afumată</li>
+            <li>1 lingură (10 g) pudră de usturoi</li>
+            <li>1 lingură (10 g) pudră de ceapă</li>
+            <li>1 lingură (15 g) zahăr brun</li>
+            <li>1 linguriță (3 g) ardei cayenne (opțional, pentru un plus de iuțeală)</li>
+            <li>250 ml sos BBQ (sau sosul preferat)</li>
+        </ul>
+
+        <h2>Pași:</h2>
+        <ul class="steps">
+            <li>Pasul 1: Pregătirea coastelor:
+
+                Îndepărtați membrana de pe partea din spate a coastelor (folosiți un cuțit pentru a ridica un colț, apoi prindeți-o cu un prosop de hârtie și trageți-o).
+                Ștergeți coastele cu prosoape de hârtie până devin uscate.</li>
+
+            <li>Pasul 2: Asezonarea coastelor:
+
+                Într-un bol mic, amestecați sare, piper negru, boia afumată, pudră de usturoi, pudră de ceapă, zahăr brun și piper cayenne.
+                Ungeți coastele cu ulei de măsline, apoi acoperiți-le uniform cu amestecul de condimente.</li>
+                
+            <li>Pasul 3: Împachetarea și coacerea:
+
+                Preîncălziți cuptorul la 150°C.
+                Împachetați coastele strâns în folie de aluminiu (cu partea cărnoasă în sus) și așezați-le într-o tavă de copt.
+                Coaceți timp de 2,5 – 3 ore, până când coastele devin fragede.</li>
+
+            <li>Pasul 4: Aplicarea sosului BBQ și rumenirea:
+
+                Scoateți coastele din cuptor și îndepărtați folia.
+                Ungeți coastele cu un strat generos de sos BBQ.
+                Setați cuptorul pe funcția de rumenire (sau la 220°C) și lăsați-le 5–10 minute, până când sosul se caramelizează.</li>
+                
+            <li>Pasul 5: Odihna și servirea:
+
+                Lăsați coastele să se odihnească timp de 5–10 minute.
+                Tăiați-le și serviți-le cu sos BBQ suplimentar.</li>
+        </ul>
+
+        <a href="./american.html" class="back-link">← Înapoi</a>
+    </div>
+
+</body>
+</html>

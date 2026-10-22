@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Table | Recipe Name</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(https://i.pinimg.com/736x/ee/cf/e2/eecfe24f6f4505c44fd82c5e7902918e.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: "Kurale", serif;
+            color: #F3CA52;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0A6847;
+            padding: 10px;
+            text-align: center;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            width: 100%;
+            gap: 50px;
+            font-size: 25px;
+        }
+
+        .nav-left { margin-left: 20px; }
+        .nav-right { justify-content: end; margin-right: 20px; }
+        .nav-left a, .nav-right a { color: #F3CA52; text-decoration: none; }
+
+        .title {
+            font-family: "Lancelot", serif;
+            font-size: 50px;
+            margin-top: 80px;
+        }
+
+        .video-container {
+            margin: 30px auto;
+            width: 80%;
+            max-width: 800px;
+            height: 400px;
+            background-color: #0A6847;
+            border: 2px solid #F3CA52;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #F6E9B2;
+        }
+
+        .recipe-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #0A6847;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 { font-size: 26px; margin-bottom: 10px; }
+        ul { text-align: left; padding-left: 30px; font-size: 20px; }
+        .back-link { display: block; margin-top: 20px; font-size: 22px; color: #F3CA52; text-decoration: none; }
+        .back-link:hover { color: #F6E9B2; }
+
+        ul li {
+            margin-bottom: 20px;
+        }
+
+        .anim1 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim1::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            background: lightgreen;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim1:hover:after {
+            width: 100%;
+        }
+
+        .anim2 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim2::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            background: lightgreen;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim2:hover:after {
+            width: 100%;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <img src="./culinary.PNG" width="60px" height="60px" />
+
+        <div class="nav-left">
+            <a href="../Home/Atestat.html" class="anim1">Acasă</a>
+            <a href="../Home/recipes.html" class="anim1">Rețete</a>
+            <a href="../Home/cart.html" class="anim1">Coș</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="../Home/about.html" class="anim2">Despre noi</a>
+            <a href="../Home/contact.html" class="anim2">Contact</a>
+            <a href="../Home/login.html" class="anim2">Autentificare</a>
+        </div>
+    </nav>
+
+    <div class="title">
+        <h1>Piept de vită afumat</h1>
+    </div>
+
+    <div class="video-container">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4pEpuwdJOK4?si=uOvAwjXPNHAWHaQW" frameborder="0"></iframe>
+    </div>
+
+    <div class="recipe-container">
+        <h2>Ingrediente:</h2>
+        <ul>
+            <li>1 piept de vită întreg (4–6 kg)</li>
+            <li>3 linguri (45 ml) ulei de măsline sau muștar galben (pentru aderență)</li>
+            <li>2 linguri (30 g) sare grunjoasă</li>
+            <li>2 linguri (30 g) piper negru</li>
+            <li>1 lingură (15 g) boia afumată</li>
+            <li>1 lingură (10 g) pudră de usturoi</li>
+            <li>1 lingură (10 g) pudră de ceapă</li>
+            <li>1 lingură (10 g) zahăr brun</li>
+            <li>1 linguriță (3 g) ardei iute Cayenne (opțional, pentru un plus de iuțeală)</li>
+            <li>250 ml oțet de mere sau supă de vită (pentru stropire)</li>
+        </ul>
+
+        <h2>Pași:</h2>
+        <ul>
+            <li>Pasul 1: Pregătirea pieptului de vită:
+                Scoateți pieptul de vită din frigider cu o oră înainte de afumare, pentru a-l aduce la temperatura camerei.
+                Tăiați grăsimile excesive, lăsând aproximativ 6-8 mm de strat de grăsimi pentru a menține carnea suculentă.
+                Ștergeți pieptul de vită cu prosoape de hârtie.</li>
+
+            <li>Pasul 2: Asezonarea pieptului de vită:
+                Îmbrăcați pieptul de vită cu ulei de măsline sau muștar galben pentru a ajuta amestecul de condimente să se fixeze.
+                Într-un bol, amestecați sarea, piperul negru, boia afumată, pudra de usturoi, pudra de ceapă, zahărul brun și ardeiul iute.
+                Acoperiți generos pieptul de vită cu amestecul de condimente pe toate fețele.</li>
+
+            <li>Pasul 3: Afumarea pieptului de vită:
+                Preîncălziți afumătorul la 110-120°C folosind lemn de fag, hickory sau mesquite.
+                Plasați pieptul de vită cu partea grăsimii în sus pe grata afumătorului.
+                Afumați timp de 6-8 ore (aproximativ 1.5 ore per kg) până când temperatura internă ajunge la 75°C, stropindu-l la fiecare oră cu oțet de mere sau supă de vită.</li>
+
+            <li>Pasul 4: Împachetarea pieptului de vită (Texas Crutch):
+                Odată ce pieptul de vită ajunge la 75°C, împachetați-l strâns în hârtie pentru bucătării sau folie de aluminiu pentru a păstra umiditatea.
+                Reveniți la afumător și continuați coacerea până când temperatura internă ajunge la 92-95°C (acest lucru necesită alte 4-6 ore).</li>
+
+            <li>Pasul 5: Odihnirea pieptului de vită:
+                Scoateți pieptul de vită din afumător și lăsați-l să se odihnească timp de 1-2 ore într-un frigider sau împachetat în folie.
+                Acest lucru permite sucurilor să se redistribuie, făcând pieptul de vită mai moale.</li>
+
+            <li>Pasul 6: Tăierea și servirea:
+                Tăiați pieptul de vită împotriva grânei în bucăți de 5-10 mm thick.
+                Serviți cu sos BBQ, castraveti murati, salata de varza sau pâine proaspătă.</li>
+        </ul>
+
+        <a href="./american.html" class="back-link">← Înapoi</a>
+    </div>
+
+</body>
+</html>

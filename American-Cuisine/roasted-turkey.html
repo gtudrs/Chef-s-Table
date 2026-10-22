@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Table | Recipe Name</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(https://i.pinimg.com/736x/ee/cf/e2/eecfe24f6f4505c44fd82c5e7902918e.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: "Kurale", serif;
+            color: #F3CA52;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0A6847;
+            padding: 10px;
+            text-align: center;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            width: 100%;
+            gap: 50px;
+            font-size: 25px;
+        }
+
+        .nav-left { margin-left: 20px; }
+        .nav-right { justify-content: end; margin-right: 20px; }
+        .nav-left a, .nav-right a { color: #F3CA52; text-decoration: none; }
+
+        .title {
+            font-family: "Lancelot", serif;
+            font-size: 50px;
+            margin-top: 80px;
+        }
+
+        .video-container {
+            margin: 30px auto;
+            width: 80%;
+            max-width: 800px;
+            height: 400px;
+            background-color: #0A6847;
+            border: 2px solid #F3CA52;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #F6E9B2;
+        }
+
+        .recipe-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #0A6847;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 { font-size: 26px; margin-bottom: 10px; }
+        ul { text-align: left; padding-left: 30px; font-size: 20px; }
+        .back-link { display: block; margin-top: 20px; font-size: 22px; color: #F3CA52; text-decoration: none; }
+        .back-link:hover { color: #F6E9B2; }
+
+        ul li {
+            margin-bottom: 20px;
+        }
+
+        .anim1 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim1::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            background: lightgreen;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim1:hover:after {
+            width: 100%;
+        }
+
+        .anim2 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim2::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            background: lightgreen;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim2:hover:after {
+            width: 100%;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <img src="./culinary.PNG" width="60px" height="60px" />
+
+        <div class="nav-left">
+            <a href="../Home/Atestat.html" class="anim1">Acasă</a>
+            <a href="../Home/recipes.html" class="anim1">Rețete</a>
+            <a href="../Home/cart.html" class="anim1">Coș</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="../Home/about.html" class="anim2">Despre noi</a>
+            <a href="../Home/contact.html" class="anim2">Contact</a>
+            <a href="../Home/login.html" class="anim2">Autentificare</a>
+        </div>
+    </nav>
+
+    <div class="title">
+        <h1>Roasted Turkey</h1>
+    </div>
+
+    <div class="video-container">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zKdkTktlKUE?si=73bzM1w1R8h1mg6J" frameborder="0"></iframe>
+    </div>
+
+    <div class="recipe-container">
+        <h2>Ingrediente:</h2>
+        <ul>
+            <li>1 curcan întreg (4-6 kg)</li>
+            <li>100 g unt (moale)</li>
+            <li>3 linguri (45 ml) ulei de măsline</li>
+            <li>2 linguri (30 g) sare</li>
+            <li>1 lingură (10 g) piper negru</li>
+            <li>1 lingură (10 g) boia afumată</li>
+            <li>1 lingură (10 g) pudră de usturoi</li>
+            <li>1 lingură (10 g) pudră de ceapă</li>
+            <li>1 lingură (10 g) cimbru uscat</li>
+            <li>1 lingură (10 g) rozmarin uscat</li>
+            <li>1 lingură (10 g) salvie uscată</li>
+            <li>1 lămâie (tăiată în jumătăți)</li>
+            <li>1 ceapă (tăiată în sferturi)</li>
+            <li>4 căței de usturoi (zdrobiți)</li>
+            <li>500 ml supă de pui sau de curcan (pentru stropit)</li>
+        </ul>
+
+        <h2>Pași:</h2>
+        <ul>
+            <li>Pasul 1: Pregătirea curcanului:
+
+                Scoateți curcanul din frigider cu o oră înainte de gătire, pentru a ajunge la temperatura camerei.
+                Preîncălziți cuptorul la 180°C.
+                Ștergeți curcanul cu prosoape de hârtie până se usucă și îndepărtați eventualele măruntaie.</li>
+
+            <li>Pasul 2: Condimentarea curcanului:
+
+                Într-un bol, amestecați untul moale, uleiul de măsline, sarea, piperul, boiaua afumată, pudra de usturoi, pudra de ceapă, cimbrul, rozmarinul și salvia.
+                Desprindeți cu grijă pielea curcanului și întindeți jumătate din amestecul de unt pe sub piele.
+                Ungeți restul amestecului de unt pe toată suprafața curcanului.</li>
+
+            <li>Pasul 3: Umplerea curcanului (opțional):
+
+                Introduceți jumătăți de lămâie, sferturi de ceapă și usturoi zdrobit în interiorul curcanului, pentru un plus de aromă.</li>
+
+            <li>Pasul 4: Coacerea curcanului:
+
+                Așezați curcanul cu pieptul în sus, pe un grătar așezat într-o tavă de cuptor.
+                Turnați 500 ml de supă în tavă, pentru a menține carnea suculentă.
+                Acoperiți lejer cu folie de aluminiu și coaceți timp de 45 de minute pentru fiecare kilogram (de exemplu, un curcan de 5 kg = aproximativ 3 ore și 45 de minute).</li>
+
+            <li>Pasul 5: Stropirea curcanului:
+
+                La fiecare 45 de minute, stropiți curcanul cu sosul din tavă.
+                Îndepărtați folia în ultimele 45 de minute, pentru a permite pielii să devină aurie și crocantă.</li>
+
+            <li>Pasul 6: Curcanul este gata atunci când temperatura internă ajunge la 75°C (verificați în cea mai groasă parte a pieptului și a pulpei, folosind un termometru pentru carne).
+                Dacă nu aveți un termometru, înțepați cea mai groasă parte a pulpei; dacă sucul care iese este limpede, înseamnă că este gata.</li>
+
+            <li>Pasul 7: Odihnirea curcanului:
+
+                Scoateți curcanul din cuptor și lăsați-l să se odihnească timp de 30 de minute înainte de a-l tranșa. Acest lucru ajută la păstrarea sucurilor în carne.</li>
+
+            <li>Pasul 8: Servirea:
+
+                Tăiați curcanul și serviți-l alături de sos, piure de cartofi, legume coapte sau alte garnituri preferate.
+                </li>
+        </ul>
+
+        <a href="./american.html" class="back-link">← Înapoi</a>
+    </div>
+
+</body>
+</html>
